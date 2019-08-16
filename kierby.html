@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+        <script src="amaw.js" charset="utf-8"></script>
+        <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+  </head>
+  <body>
+    <h1>University of Cebu Food Court</h1>
+    <form action="submit.html" method="get" target="_self">
+     First Name: <input type="text" placeholder="First Name" name="first_name">  <br />
+    Last Name: <input type="text" placeholder="Last Name" name="last_name">  <br />
+    Cellphone Number: <input type="text" placeholder="Cellphone Number" name="cellphone_number"> <br /> 
+         <h2>Menu</h2>
+      <select name="List" class="haha">
+        <option value="Lamoy">Lamoy</option>
+        <option value="Bachoy">Bachoy</option>
+        <option value="Ramen">Ramen</option>
+        <option value="Crab Meat">Crab Meat</option>
+        <option value="Burger">Burger</option>
+
+      </select><br/>
+      <input type="reset" name="Reset">
+      <input type="submit" value="Submit" />
+    </form>
+    <p class="result"></p>
+  </body>

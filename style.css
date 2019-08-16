@@ -1,0 +1,30 @@
+body{
+background: linear-gradient(90deg,#1abc9c,#9b59b6,#f1c40f);
+background: url(catfood.jpg) no-repeat bottom right,url(kierby.jpg)no-repeat bottom left;
+
+ 
+}
+
+h2{
+	font-size: 50px;
+	background-size: 300px;
+	background-attachment: fixed;
+}
+
+
+
+
+h1{
+text-align: center; 
+content: '';
+color: linear-gradient(90deg,#1abc9c,#9b59b6,#f1c40f);
+transition: .10s;
+}
+
+form{
+text-align: center; 
+padding: 20px;
+margin: 20px;
+border-top: groove;
+border-width: 30px;
+}
